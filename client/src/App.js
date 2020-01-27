@@ -20,9 +20,11 @@ const App = () => {
 <Route exact path = "/">
   <MovieList/>
 </Route>
-<Route path = "/movie/:id">
-  <Movie/>
-</Route>
+<Route path = "/movies/:id"
+   render={props => <Movie {...props}/>}
+   />
+> 
+
       </Switch>
       {/* <div>Replace this Div with your Routes</div> */}
     </div>
