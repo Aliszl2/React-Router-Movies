@@ -4,8 +4,24 @@ body {
   font-family: sans-serif;
   background-color: #f2f2f2;
 }
+.main-container{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.movie-list{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
 .movie-card {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-emphasis: wrap;
   background-color: #fff;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
@@ -30,14 +46,25 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
-  width: 75%;
+  width: 45%;
+  max-height: 400px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
   justify-content: space-between;
 }
 
 .saved-list h3 {
   margin-right: 10px;
+}
+.film-list{
+  /* margin-top:40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  max-height: 400px;
 }
 
 .saved-movie {
@@ -55,8 +82,8 @@ body {
 }
 .save-button {
   position: absolute;
-  top: 25px;
-  right: 25px;
+    top: 50px;
+  right: 190px;
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
@@ -67,6 +94,15 @@ body {
 }
 
 .home-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
   padding: 5px 10px;
   background-color: lightskyblue;
+  justify-items: end;
+  border: 1px solid grey;
+}
+.home-button:hover {
+  background-color: green;
+  color: white;
 }

@@ -5,7 +5,7 @@ import axios from 'axios';
 const Movie = (props) => {
   console.log(props);
   const [movie, setMovie] = useState();
-  
+  // };
   // let { id }=useParams();
   useEffect(() => {
     // const id = 1;
